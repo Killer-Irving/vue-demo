@@ -1,10 +1,9 @@
 <template>
   <div>
-    <div>我是helloworld页面</div>
-    <div>state：{{this.$store.state.count}}</div>
-    <div>getters:{{this.$store.getters.stateCount}}</div>
-    <span @click="reduce">-</span>
-    <span @click="add">+</span>
+    <span>im test.vue</span>
+    <router-link to="./testChild">go test-child</router-link>
+    <router-link to="./testChild2">go test-child2</router-link>
+    <router-view></router-view>
   </div>
 </template>
 

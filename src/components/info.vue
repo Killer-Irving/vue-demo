@@ -1,15 +1,12 @@
 <template>
   <div>
-    <div>我是helloworld页面</div>
-    <div>state：{{this.$store.state.count}}</div>
-    <div>getters:{{this.$store.getters.stateCount}}</div>
-    <span @click="reduce">-</span>
-    <span @click="add">+</span>
+    <span>im info.vue</span>
   </div>
 </template>
 
 <script>
 export default {
+  name: "HelloWorld",
   data() {
     return {
       msg: "Welcome to Your Vue.js App"
