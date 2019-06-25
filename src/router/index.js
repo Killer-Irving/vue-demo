@@ -19,11 +19,20 @@ export default new Router({
     },
     {
       path: '/login',
-      component: Login
+      component: Login,
+      // 局部导航守卫
+      beforeEnter: (to, from, next) => {
+        console.log('进来了登录页面')
+        next();
+      },
     },
     {
       path: '/index',
       component: Index,
+      beforeEnter: (to, from, next) => {
+        console.log('进来了首页')
+        next();
+      },
       children: [
         {
           path: '/test',
@@ -49,5 +58,7 @@ export default new Router({
       path: '/info',
       component: Info
     },
-  ]
+  ],
 })
+
+
