@@ -20,7 +20,16 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+    proxyTable: {
+      '/api': {
+        target: 'https://gitee.com',
+        changeOrigin: true,  //是否跨域  
+        secure: false,    
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    },
     /**
      * Source Maps
      */

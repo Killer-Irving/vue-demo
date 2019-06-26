@@ -17,19 +17,10 @@ export default {
   props: {},
   components: {},
   mounted() {
-    setTimeout(() => {
-      this.$store.state.count = 2;
-    }, 1000);
   },
   created() {},
   watch: {},
   methods: {
-    reduce() {
-      this.$store.state.count--;
-    },
-    add() {
-      this.$store.state.count++;
-    }
   }
 };
 </script>

@@ -5,11 +5,10 @@
 </template>
 
 <script>
+// const http = require('../../static/base.js');
 export default {
   data() {
-    return {
-      msg: "Welcome to Your Vue.js App"
-    };
+    return {};
   },
   props: {},
   components: {},
@@ -18,11 +17,15 @@ export default {
     if (this.$store.state.isLogin) {
       this.$router.push("./index");
     }
+    this.request_aaa()
   },
   watch: {},
   methods: {
     login() {
       this.$router.push("./index?id=11");
+    },
+    request_aaa() {
+      this.$request.aaa();
     }
   }
 };

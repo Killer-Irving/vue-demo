@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+// const http = require('../../static/base.js');
 //使用vuex
 Vue.use(Vuex);
 //创建实例
