@@ -1,9 +1,13 @@
-
-module.exports = {
-    aaa() {
+import axios from 'axios';
+const request = {
+    get() {
         console.log('im aaa')
-        this.axios
+        axios
             .get("/api/search/translate", {
+                // headers: {
+                //     'Authorization': 'Bearer ' + token,
+                //     "Cookie": 'sessionId=' + sessionId + '; recId=' + recId,
+                // },
                 params: {
                     q: '啊啊啊'
                 }
@@ -16,3 +20,4 @@ module.exports = {
             });
     },
 }
+export default request;

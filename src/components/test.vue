@@ -1,8 +1,8 @@
 <template>
   <div>
     <span>im test.vue</span>
-    <router-link to="./testChild">go test-child</router-link>
-    <router-link to="./testChild2">go test-child2</router-link>
+    <router-link to="/test/testChild">go test-child</router-link>
+    <router-link to="/test/testChild2">go test-child2</router-link>
     <router-view></router-view>
   </div>
 </template>

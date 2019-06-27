@@ -19,7 +19,7 @@ export default {
   watch: {},
   methods: {
     go_info() {
-      this.$router.push("./info");
+      this.$router.push("/info");
     }
   }
 };

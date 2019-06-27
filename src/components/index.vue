@@ -2,8 +2,8 @@
   <div>
     <div>im index.vue</div>
     <div>我是参数{{id}}</div>
-    <router-link to="./test">go test</router-link>
-    <router-link to="./hello">go hello</router-link>
+    <router-link to="/test">go test</router-link>
+    <router-link to="/hello">go hello</router-link>
     <router-view></router-view>
   </div>
 </template>

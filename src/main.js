@@ -4,10 +4,7 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import store from './store/index.js';
-import axios from 'axios';
-import VueAxios from 'vue-axios';
-Vue.use(VueAxios, axios);
-const request = require('./utils/base.js');
+import request from './utils/base.js';
 Vue.prototype.$request = request;
 Vue.config.productionTip = false
 /* eslint-disable no-new */

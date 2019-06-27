@@ -5,7 +5,6 @@
 </template>
 
 <script>
-// const http = require('../../static/base.js');
 export default {
   data() {
     return {};
@@ -15,17 +14,17 @@ export default {
   mounted() {},
   created() {
     if (this.$store.state.isLogin) {
-      this.$router.push("./index");
+      this.$router.push("/index");
     }
     this.request_aaa()
   },
   watch: {},
   methods: {
     login() {
-      this.$router.push("./index?id=11");
+      this.$router.push("/index?id=11");
     },
     request_aaa() {
-      this.$request.aaa();
+      this.$request.get();
     }
   }
 };

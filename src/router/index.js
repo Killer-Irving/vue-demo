@@ -39,11 +39,11 @@ export default new Router({
           component: Test,
           children: [
             {
-              path: '/testChild',
+              path: '/test/testChild',
               component: Test_1,
             },
             {
-              path: '/testChild2',
+              path: '/test/testChild2',
               component: Test_2,
             },
           ]
