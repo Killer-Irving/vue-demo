@@ -21,7 +21,11 @@ export default {
   created() {
     this.id = this.$route.query.id;
   },
-  watch: {},
+  watch: {
+    // $route(to, from) {
+    //   console.log(to.path);
+    // }
+  },
   methods: {}
 };
 </script>

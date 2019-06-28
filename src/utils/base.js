@@ -1,12 +1,15 @@
+import Vue from 'vue';
 import axios from 'axios';
+import VueAxios from 'vue-axios';
+Vue.use(VueAxios, axios);
 const request = {
     get() {
         console.log('im aaa')
-        axios
+        Vue.axios
             .get("/api/search/translate", {
                 // headers: {
                 //     'Authorization': 'Bearer ' + token,
-                //     "Cookie": 'sessionId=' + sessionId + '; recId=' + recId,
+                //     "Cookie" : 'sessionId=' + sessionId + '; recId=' + recId,
                 // },
                 params: {
                     q: '啊啊啊'

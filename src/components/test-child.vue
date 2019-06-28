@@ -12,9 +12,13 @@ export default {
   },
   props: {},
   components: {},
-  mounted() {},
-  created() {},
-  watch: {},
+  mounted() {
+  },
+  created() {
+    console.log('im new created')
+  },
+  watch: {
+  },
   methods: {
     page_up() {
       this.$router.go(-1);

@@ -41,6 +41,7 @@ export default new Router({
             {
               path: '/test/testChild',
               component: Test_1,
+
             },
             {
               path: '/test/testChild2',

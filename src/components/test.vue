@@ -19,7 +19,11 @@ export default {
   mounted() {
   },
   created() {},
-  watch: {},
+  watch: {
+    $route(to, from) {
+      console.log(to.path);
+    }
+  },
   methods: {
   }
 };
