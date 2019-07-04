@@ -3,7 +3,7 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
-import store from './store/index.js';
+import store from './store/all.js';
 import request from './utils/base.js';
 Vue.prototype.$request = request;
 Vue.config.productionTip = false

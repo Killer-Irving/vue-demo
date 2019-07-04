@@ -18,7 +18,9 @@ export default {
   components: {},
   mounted() {
   },
-  created() {},
+  created() {
+    console.log('im test.vue onload')
+  },
   watch: {
     $route(to, from) {
       console.log(to.path);

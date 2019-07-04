@@ -12,6 +12,7 @@
 export default {
   data() {
     return {
+      page:'index',
       id: 0
     };
   },

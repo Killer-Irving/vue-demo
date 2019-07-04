@@ -1,15 +1,15 @@
 const state = {
-	count: 1,
-	stateCount:0
+	pagelog: "im login.js",
+	isLogin: false
 };
 const mutations = {
 };
 const actions = {
 };
 const getters = {
-	stateCount: function (state) {
-		return state.count + 3
-	}
+	login(){
+
+	},
 };
 export default {
 	state,
